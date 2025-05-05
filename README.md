@@ -2,8 +2,9 @@
 
 ## 📌 Descrição
 
-Este repositório contém o projeto **Sabor-Express-OO**, uma aplicação de console desenvolvida em **Python com Programação Orientada a Objetos**, com foco no aprendizado de conceitos fundamentais da linguagem.  
-A aplicação simula a gestão de um sistema de restaurantes, permitindo cadastro, ativação, avaliação e visualização de informações.
+Este repositório abriga o projeto Sabor-Express-OO, uma aplicação de console desenvolvida com o objetivo de aprender, praticar e consolidar os principais conceitos de Python. O projeto abrange desde a configuração do ambiente de desenvolvimento e fundamentos da linguagem - como sintaxe, entrada de dados e estruturas - até tópicos de Orientação a Objetos, incluindo classes, construtores, propriedades e tipos de métodos.
+
+Além disso, são explorados ambientes virtuais, manipulação de arquivos e consumo de APIs. A aplicação simula um sistema de gerenciamento de restaurantes, permitindo o cadastro, ativação, avaliação e consulta de informações.
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -11,10 +12,11 @@ A aplicação simula a gestão de um sistema de restaurantes, permitindo cadastr
 
 ## 🚀 Funcionalidades Principais
 
-- Cadastro de restaurantes 🍽️  
-- Busca por nome 🔍  
-- Avaliação individual de restaurantes 📝  
-- Visualização de detalhes 📖  
+- Cadastro de restaurantes 🍽️
+- Inserção de cardápios 📃
+- Busca por nome 🔍
+- Avaliação individual de restaurantes 🔟
+- Visualização de detalhes 📖
 - Ativação e desativação de estabelecimentos 🚫
 
 ## ▶️ Como Utilizar

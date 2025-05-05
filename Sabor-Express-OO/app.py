@@ -1,12 +1,14 @@
 from Modelos.restaurante import Restaurante
+from Modelos.Cardápio.prato import Prato
+from Modelos.Cardápio.bebida import Bebida
 
 restaurante_1 = Restaurante('Yakuza Sushi 893', 'Japonesa')
-restaurante_1.receber_parecer('Guilherme', 10)
-restaurante_1.receber_parecer('Maria', 9)
+prato_1 = Prato('Sushi', 25.00, 'Sushi de salmão')
+bebida_1 = Bebida('Cerveja', 10.00, 'Cerveja gelada')
 
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(prato_1)
 
 
 if __name__ == '__main__':
