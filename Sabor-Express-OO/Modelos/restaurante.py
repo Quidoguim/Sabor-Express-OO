@@ -1,4 +1,5 @@
 from Modelos.pareceres import Pareceres
+from Modelos.Cardápio.item_cardapio import ItemCardapio
 
 
 class Restaurante:
@@ -23,6 +24,7 @@ class Restaurante:
         self._categoria = categoria.upper()
         self._status = False
         self._pareceres = []
+        self._cardapio = []
         self.restaurantes.append(self)
 
     def __str__(self):
@@ -88,3 +90,37 @@ class Restaurante:
         quantidade_de_notas = len(self._pareceres)
         resultado = round(soma_das_notas / quantidade_de_notas, 1)
         return resultado
+
+    # def adicionar_bebida(self, bebida):
+    #     """
+    #     Adiciona uma bebida ao cardápio do restaurante.
+
+    #     Args:
+    #         bebida (Bebida): Objeto Bebida a ser adicionado ao cardápio.
+    #     """
+    #     self._cardapio.append(bebida)
+
+    # def adicionar_prato(self, prato):
+    #     """
+    #     Adiciona um prato ao cardápio do restaurante.
+
+    #     Args:
+    #         prato(Prato): Objeto Prato a ser adicionado ao cardápio.
+    #     """
+
+    #     self._cardapio.append(prato)
+
+    def adicionar_item_cardapio(self, item_cardapio):
+        if isinstance(item_cardapio, ItemCardapio):
+            self._cardapio.append(item_cardapio)
+
+    @property
+    def listar_cardapio(self):
+        print(f'Cardápio do restaurante {self._nome}:\n')
+        for i, item_cardapio in enumerate(self._cardapio, start=1):
+            if hasattr(item_cardapio, 'descricao'):
+                mensagem_prato = f'{i} - Nome: {item_cardapio._nome} | Preço: R$ {item_cardapio._preco} | Descrição: {item_cardapio._descricao}'
+                print(mensagem_prato)
+            else:
+                mensagem_bebida = f'{i} - Nome: {item_cardapio._nome} | Preço: R$ {item_cardapio._preco} | Descrição: {item_cardapio._descricao}'
+                print(mensagem_bebida)
